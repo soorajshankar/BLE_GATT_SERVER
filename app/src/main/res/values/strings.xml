@@ -1,0 +1,67 @@
+<!--
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<resources>
+    <string name="app_name">BLE Peripheral Simulator</string>
+    <string name="title_activity_peripherals">Peripherals</string>
+    <string name="title_activity_peripheral">Peripheral</string>
+    <string name="notify">Notify</string>
+
+    <!-- Bluetooth -->
+    <string name="bluetoothNotSupported">BLE Peripheral Simulator closing: Bluetooth Not Supported</string>
+    <string name="bluetoothNotEnabled">BLE Peripheral Simulator closing: Bluetooth is Not Enabled</string>
+    <string name="bluetoothAdvertisingNotSupported">BLE Peripheral Simulator closing: BLE Advertising Not Supported</string>
+
+    <!-- Adv -->
+    <string name="label_advertisingStatus">Advertising Status</string>
+    <string name="status_advertising">Advertising (Keep Screen On)</string>
+    <string name="status_notAdvertising">Not Advertising</string>
+    <string name="status_advDataTooLarge">Not Advertising. Advertisement is larger than 31 bytes.</string>
+    <string name="status_advFeatureUnsupported">Not Advertising. Advertising not supported.</string>
+    <string name="status_advInternalError">Not Advertising. Internal error occurred.</string>
+    <string name="status_advTooManyAdvertisers">Not Advertising. No advertising instance is available.</string>
+
+    <!-- Connection -->
+    <string name="label_connectionStatus">Connection Status</string>
+    <string name="status_devicesConnected">Devices Connected:</string>
+    <string name="status_errorWhenConnecting">An error occurred when connecting to a device. Error Code</string>
+
+    <!-- Battery Service -->
+    <string name="batteryService_name">Battery Service</string>
+    <string name="batteryLevelTooHigh">Batter Level shouldn\'t exceed 100</string>
+    <string name="batteryLevelIncorrect">Please enter a number between 0 and 100</string>
+
+    <!-- Hear Rate Service -->
+    <string name="label_bodySensorLocation">Body Sensor Location</string>
+    <string name="heartRateServiceName">Heart Rate Service</string>
+    <string name="label_heartRateMeasurementValue">Heart Rate</string>
+    <string name="label_energyExpended">Energy Expended</string>
+    <string name="heartRateMeasurementValueInvalid">Please enter a number between 0 and 255</string>
+    <string name="energyExpendedInvalid">Please enter a number between 0 and 65535</string>
+
+    <!-- Health Thermometer Service -->
+    <string name="healthThermometerServiceName">Health Thermometer Service</string>
+    <string name="label_temperatureMeasurementValue">Temperature (°C)</string>
+    <string name="label_measurementInterval">Measurement Interval (s)</string>
+    <string name="temperatureMeasurementValueInvalid">Please enter a valid float number</string>
+    <string name="measurementIntervalInvalid">Please enter a number between 0 and 65535</string>
+    <string name="notificationsEnabled">Notifications enabled</string>
+    <string name="notificationsNotEnabled">Notifications not enabled</string>
+
+    <string name="status_noLeAdv">LE Advertising is not available. Please pair with a device to be
+        discoverable.
+    </string>
+    <string name="menu_disconnect_devices">Disconnect Devices</string>
+</resources>

@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    defaultConfig {
+        applicationId "io.github.webbluetoothcg.bletestperipheral"
+        minSdkVersion 21
+        targetSdkVersion 22
+        versionCode 10
+        versionName '10.0'
+    }
+    buildTypes {
+        repositories {
+            google() // here
+            jcenter()
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        quiet true
+        checkReleaseBuilds false
+        // if true, stop the gradle build if errors are found
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+}
